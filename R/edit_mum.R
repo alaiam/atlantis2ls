@@ -1,12 +1,12 @@
 
 #' edit_param_mum_group_age
 #'
-#' @param bio.prm --> biology prm files
-#' @param new.mum --> table of new mum for the species with vector.size age classes
-#' @param overwrite --> boolean. T = create a new biology prm files, called new.file.name
-#' @param new.file.name --> path of the new file
-#' @param single.group  --> T if vector = 1 (useless then...)
-#' @param vector.size   --> size of the age class vector to edit
+#' @param bio.prm Biology prm file path
+#' @param new.mum Table of new mum for the species with vector.size age classes
+#' @param overwrite Boolean. T = create a new biology prm files, called new.file.name
+#' @param new.file.name Path of the new file
+#' @param single.group  Boolean. T if vector = 1 (useless then...)
+#' @param vector.size   Size of the age class vector to edit
 #'
 #' @return  Nothing, write a new biology prm files
 #' @export
@@ -64,7 +64,7 @@ edit_param_mum_group_age = function(bio.prm, new.mum, overwrite = F,new.file.nam
 #'
 #' @param bio.prm  --> biology prm files
 #' @param factor  --> factor to multiply the old value of mum
-#' @param species --> species code in the Altantis configuration
+#' @param species --> species code in the Atlantis configuration
 #'
 #' @return bio.lines, vector with X elements, X = number of lines of biology prm files.
 #' Each element is a line of biology prm files

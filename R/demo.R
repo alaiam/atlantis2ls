@@ -18,3 +18,8 @@ bio.prm2 = "C:/Users/Alaia/Desktop/Postdoc/R script/atlantis2ls/data/AMPSbiopara
 # }
 
 
+# a <- edit_param_sp(bio.prm, param = "bhbeta", factor = 2, species = "HEP")
+# ratio
+# package fusem --> helpful to create a package
+
+
