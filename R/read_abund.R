@@ -32,7 +32,7 @@ extract_abundance_grp <- function(path, prefix = NULL){
 extract_abundance_sp <- function(path, prefix = NULL, species){
   data <- extract_abundance_grp(path, prefix = prefix)
   i.species = grep(species,names(data))
-  if (length(test)){
+  if (length(i.species)>0){
     return(Reduce('+', data[i.species]))
   }else{
     return(NA)

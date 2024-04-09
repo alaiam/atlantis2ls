@@ -23,7 +23,8 @@ read_atlantis = function(path, prefix = NULL, fg.file, fishery = F, spatial = F,
   # a lot of lines to actually read the data
   output = list(biomass= extract_biomass_main(path = path, prefix = prefix, fg.file = fg.file),
                 landings=extract_catch_main(path, prefix = prefix, fg.file, fishery = F),
-                abundance= extract_abund_main(path, prefix = prefix, fg.file))
+                abundance= extract_abund_main(path, prefix = prefix, fg.file),
+                waa = extract_waa(path=path, prefix = prefix))
 
   class(output$biomass) = "atlantis.biomass"
   class(output$landings) = "atlantis.landings"
