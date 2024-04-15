@@ -11,7 +11,6 @@
 #' @examples
 edit_param_BHalpha_sp = function(bio.lines, factor, species){
 
-  #Get mum_XXX bio.prm lines
   bio.lines = bio.lines
   pattern = paste0('BHalpha_',species)
   bio.lines.id = grep(pattern,bio.lines)
@@ -24,3 +23,4 @@ edit_param_BHalpha_sp = function(bio.lines, factor, species){
 
   return(bio.lines)
 }
+
