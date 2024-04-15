@@ -12,10 +12,10 @@
 #' @export
 #'
 #' @examples
-edit_param_mum_group_age = function(bio.prm, new.mum, overwrite = F,new.file.name,single.group = F, vector.size = 10 ){
+edit_param_mum_group_age = function(bio.lines, new.mum, overwrite = F,new.file.name,single.group = F, vector.size = 10 ){
 
   #Get mum_XXX bio.prm lines
-  bio.lines = readLines(bio.prm)
+  bio.lines = bio.lines
   pattern = paste('^mum_.*',vector.size, sep = "")
   bio.lines.id = grep(pattern,bio.lines)
   bio.lines.vals1 = bio.lines[bio.lines.id]
@@ -47,6 +47,7 @@ edit_param_mum_group_age = function(bio.prm, new.mum, overwrite = F,new.file.nam
       C.string = paste(new.mum[i,1:(vector.size)],collapse='\t')
       bio.lines[bio.lines.id[i] + 2] = C.string
     }
+    return(bio.lines)
   }
 
   #overwrite or make copy of biology file
@@ -71,10 +72,10 @@ edit_param_mum_group_age = function(bio.prm, new.mum, overwrite = F,new.file.nam
 #' @export
 #'
 #' @examples
-edit_param_mum_sp = function(bio.prm, factor, species){
+edit_param_mum_sp = function(bio.lines, factor, species){
 
   #Get mum_XXX bio.prm lines
-  bio.lines = readLines(bio.prm)
+  bio.lines = bio.lines
   pattern = paste0('mum_',species)
   bio.lines.id = grep(pattern,bio.lines)
   bio.lines.vals1 = bio.lines[bio.lines.id]
@@ -95,3 +96,6 @@ edit_param_mum_sp = function(bio.prm, factor, species){
 
   return(bio.lines)
 }
+
+
+

@@ -1,15 +1,15 @@
 #' edit_param_sp
 #'
-#' @param bio.prm
+#' @param bio.lines
 #' @param param
 #' @param factor
 #' @param species
 #'
-#' @return
+#' @return bio.lines with a "factor" applied to the parameter "param" of the "species"
 #' @export
 #'
 #' @examples
-edit_param_sp = function(bio.prm, param, factor, species){
+edit_param_sp = function(bio.lines, param, factor, species){
   if (tolower(param) == "mum"){
     bio.lines <- edit_param_mum_sp(bio.prm, factor, species)
   }

@@ -9,10 +9,10 @@
 #' @export
 #'
 #' @examples
-edit_param_BHalpha_sp = function(bio.prm, factor, species){
+edit_param_BHalpha_sp = function(bio.lines, factor, species){
 
   #Get mum_XXX bio.prm lines
-  bio.lines = readLines(bio.prm)
+  bio.lines = bio.lines
   pattern = paste0('BHalpha_',species)
   bio.lines.id = grep(pattern,bio.lines)
   bio.lines.vals1 = bio.lines[bio.lines.id]

@@ -8,6 +8,8 @@ bio.prm2 = "C:/Users/Alaia/Desktop/Postdoc/R script/atlantis2ls/data/AMPSbiopara
 
 # a <- read_atlantis(path = path, prefix = prefix, fg.file = fg.file)
 
+
+
 # for (i in 1:10){
 #   edit_param_mum_age(bio.prm=bio.prm,
 #                      new.mum = get_param_mum_age(bio.prm, write.output = F, output.dir, out.name, vector.size = i)*2,
