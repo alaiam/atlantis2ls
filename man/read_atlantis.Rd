@@ -4,7 +4,15 @@
 \alias{read_atlantis}
 \title{read_atlantis}
 \usage{
-read_atlantis(path, prefix = NULL, fg.file, fishery = F, spatial = F, ...)
+read_atlantis(
+  path,
+  prefix = NULL,
+  fg.file,
+  fishery = F,
+  spatial = F,
+  N_only = F,
+  ...
+)
 }
 \arguments{
 \item{path}{: the path of the atlantis folder}

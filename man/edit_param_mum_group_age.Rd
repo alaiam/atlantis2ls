@@ -5,7 +5,7 @@
 \title{edit_param_mum_group_age}
 \usage{
 edit_param_mum_group_age(
-  bio.prm,
+  bio.lines,
   new.mum,
   overwrite = F,
   new.file.name,
@@ -14,8 +14,6 @@ edit_param_mum_group_age(
 )
 }
 \arguments{
-\item{bio.prm}{Biology prm file path}
-
 \item{new.mum}{Table of new mum for the species with vector.size age classes}
 
 \item{overwrite}{Boolean. T = create a new biology prm files, called new.file.name}
@@ -25,6 +23,8 @@ edit_param_mum_group_age(
 \item{single.group}{Boolean. T if vector = 1 (useless then...)}
 
 \item{vector.size}{Size of the age class vector to edit}
+
+\item{bio.prm}{Biology prm file path}
 }
 \value{
 Nothing, write a new biology prm files

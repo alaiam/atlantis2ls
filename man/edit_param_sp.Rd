@@ -4,7 +4,7 @@
 \alias{edit_param_sp}
 \title{edit_param_sp}
 \usage{
-edit_param_sp(bio.prm, param, factor, species)
+edit_param_sp(bio.lines, param, factor, species)
 }
 \arguments{
 \item{species}{}

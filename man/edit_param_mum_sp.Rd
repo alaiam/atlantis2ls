@@ -4,14 +4,14 @@
 \alias{edit_param_mum_sp}
 \title{edit_param_mum_sp}
 \usage{
-edit_param_mum_sp(bio.prm, factor, species)
+edit_param_mum_sp(bio.lines, factor, species)
 }
 \arguments{
-\item{bio.prm}{--> biology prm files}
-
 \item{factor}{--> factor to multiply the old value of mum}
 
 \item{species}{--> species code in the Atlantis configuration}
+
+\item{bio.prm}{--> biology prm files}
 }
 \value{
 bio.lines, vector with X elements, X = number of lines of biology prm files.

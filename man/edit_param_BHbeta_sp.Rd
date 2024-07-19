@@ -4,7 +4,7 @@
 \alias{edit_param_BHbeta_sp}
 \title{Title}
 \usage{
-edit_param_BHbeta_sp(bio.prm, factor, species)
+edit_param_BHbeta_sp(bio.lines, factor, species)
 }
 \arguments{
 \item{species}{}

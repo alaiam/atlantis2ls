@@ -1,3 +1,4 @@
+
 #' edit_param_sp
 #'
 #' @param bio.lines
@@ -5,7 +6,7 @@
 #' @param factor
 #' @param species
 #'
-#' @return bio.lines with a "factor" applied to the parameter "param" of the "species"
+#' @return
 #' @export
 #'
 #' @examples
