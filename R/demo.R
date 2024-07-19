@@ -6,7 +6,7 @@ fg.file = "C:/Users/Alaia/Desktop/Postdoc/R script/atlantis2ls/data/PugetSoundAt
 bio.prm = "C:/Users/Alaia/Desktop/Postdoc/R script/atlantis2ls/data/AMPSbioparam_mv1_2022.prm"
 bio.prm2 = "C:/Users/Alaia/Desktop/Postdoc/R script/atlantis2ls/data/AMPSbioparam_mv1_20222.prm"
 
-# a <- read_atlantis(path = path, prefix = prefix, fg.file = fg.file)
+# a <- read_atlantis(path = path, prefix = prefix, fg.file = fg.file, N_only = T)
 
 
 
