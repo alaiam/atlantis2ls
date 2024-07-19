@@ -7,15 +7,14 @@
 edit_param_mq_sp(bio.lines, factor, species)
 }
 \arguments{
-\item{factor}{--> factor to multiply the old value of BHalpha}
+\item{factor}{Factor to multiply the old value of mq}
 
-\item{species}{--> species code in the Atlantis configuration}
+\item{species}{Species code in the Atlantis configuration}
 
-\item{bio.prm}{--> biology prm files}
+\item{bio.prm}{ReadLines(Biology prm files)}
 }
 \value{
-bio.lines with BHalpha of species multiplied by factor, vector with X elements, X = number of lines of biology prm files.
-Each element is a line of biology prm files
+bio.lines with mq of species multiplied by factor
 }
 \description{
 edit_param_mq_sp
