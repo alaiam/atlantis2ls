@@ -18,8 +18,7 @@ bio.prm2 = "C:/Users/Alaia/Desktop/Postdoc/R script/atlantis2ls/data/AMPSbiopara
 #                      single.group = F,
 #                      vector.size = i)
 # }
-
-
+# a <-edit_param_mq_sp(readLines(bio.prm), factor = 10, species = "CHY")
 # a <- edit_param_sp(bio.prm, param = "bhbeta", factor = 2, species = "HEP")
 # ratio
 # package fusem --> helpful to create a package
