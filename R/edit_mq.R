@@ -1,10 +1,11 @@
 #' edit_param_mq_sp
 #'
-#' @param bio.prm  ReadLines(Biology prm files)
-#' @param factor  Factor to multiply the old value of mq
-#' @param species Species code in the Atlantis configuration
+#' @param bio.prm  --> biology prm files
+#' @param factor  --> factor to multiply the old value of mq
+#' @param species --> species code in the Atlantis configuration
 #'
-#' @return bio.lines with mq of species multiplied by factor
+#' @return bio.lines with mq of species multiplied by factor, vector with X elements, X = number of lines of biology prm files.
+#' Each element is a line of biology prm files
 #' @export
 #'
 #' @examples
