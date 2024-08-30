@@ -82,9 +82,9 @@ edit_param_mum_sp = function(bio.lines, factor, species){
   if (length(bio.lines.vals1)==0) stop("The species does not have mum parameter")
 
   if (length(grep("T15",bio.lines.vals1)) == 1){
-    value <- as.numeric(unlist(strsplit(bio.lines.vals1, "\t"))[2])*factor
-    name <- unlist(strsplit(bio.lines.vals1, "\t"))[1]
-    new.line <- paste0(name, "\t", value)
+    value <- as.numeric(unlist(strsplit(bio.lines.vals1, "   "))[2])*factor
+    name <- unlist(strsplit(bio.lines.vals1, "   "))[1]
+    new.line <- paste0(name, "   ", value)
     bio.lines[bio.lines.id] <- new.line
   }else{
 
