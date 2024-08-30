@@ -87,12 +87,11 @@ edit_param_mum_sp = function(bio.lines, factor, species){
     new.line <- paste0(name, "\t", value)
     bio.lines[bio.lines.id] <- new.line
   }else{
-    print("a")
 
     bio.lines.vals1 = bio.lines[bio.lines.id + 2]
-    value <- as.numeric(unlist(strsplit(bio.lines.vals1, "\t")))*factor
+    value <- as.numeric(unlist(strsplit(bio.lines.vals1, "   ")))*factor
     value[is.na(value)] <- ""
-    new.line <- paste(as.character(value), collapse = "\t")
+    new.line <- paste0(paste(as.character(value), collapse = "   "), "   ")
     bio.lines[bio.lines.id + 2] <- new.line
   }
 
