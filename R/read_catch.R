@@ -13,8 +13,9 @@
 #' @examples
 extract_catch_main <- function(path, prefix = NULL, fg.file, fishery = F){
   fg <- process_fg(fg.file)
+
   if (fishery == F){
-    catch <- rep(list(rep(0,75)),73)
+    catch <- rep(list(rep(0,75)),length(fg$Name))
     names(catch) <- fg$Name
   }else{
 
