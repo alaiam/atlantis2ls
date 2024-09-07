@@ -58,7 +58,12 @@ calculate_biomass <- function(biomass_array, fg.file, name, outputs.nc) {
   if(length(dim(biomass_array))==3) {
     totbio <- apply(biomass_array * c(volumes_arr) * (5.7 * 20 / 10^9), 3, sum, na.rm = TRUE)
   } else {
-    totbio <- apply(biomass_array * areas_vec * (5.7 * 20 / 10^9), 2, sum, na.rm = TRUE)
+    if (length(dim(biomass_array))==0) {
+      totbio = 0
+    }else {
+
+      totbio <- apply(biomass_array * areas_vec * (5.7 * 20 / 10^9), 2, sum, na.rm = TRUE)
+    }
   }
 
 
