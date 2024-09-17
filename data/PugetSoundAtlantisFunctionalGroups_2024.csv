@@ -1,0 +1,80 @@
+Code,Index,IsTurnedOn,Name,Long Name,NumCohorts,NumGeneTypes,NumStages,NumSpawns,NumAgeClassSize,NumStocks,VerticallyMigrates,HorizontallyMigrates,NumMigrations,MultiYrMigrations,ExternalReproduction,RecruitType,IsFished,IsImpacted,isTAC,GroupType,IsPredator,IsCover,IsSiliconDep,IsAssessed,IsCatchGrazer,OverWinters,isCultured,isHabDepend,numMoveEntries,isBioEroder,isSupplemented,isExternal
+BB,0,1,Sed_Bact,Benthic bacteria,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,SED_BACT,0,0,0,0,0,0,0,0,1,0,0,0
+PB,1,1,Pelag_Bact,Pelagic bacteria,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,PL_BACT,0,0,0,0,0,0,0,0,1,0,0,0
+PL,2,1,Lrg_Phyto,Large phytoplankton,1,1,1,1,1,1,1,1,0,0,0,0,0,1,0,LG_PHY,0,0,1,0,0,0,0,0,1,0,0,0
+PS,3,1,Sm_Phyto,Small phytoplankton,1,1,1,1,1,1,1,1,0,0,0,0,0,1,0,SM_PHY,0,0,0,0,0,0,0,0,1,0,0,0
+MA,4,1,Macroalgae,Macroalgae,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,PHYTOBEN,0,1,0,0,0,0,0,0,1,0,0,0
+SG,5,1,Seagrass,Seagrass,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,SEAGRASS,0,1,0,0,0,0,0,0,1,0,0,0
+ZS,6,1,Micro_Zoo,Microzooplankton,1,1,1,1,1,1,1,1,0,0,0,0,0,1,0,SM_ZOO,1,0,0,0,0,0,0,0,1,0,0,0
+ZM,7,1,Meso_Zoo,Mesozooplankton,1,1,1,1,1,1,1,1,0,0,0,0,0,1,0,SM_ZOO,1,0,0,0,0,0,0,0,1,0,0,0
+ZL,8,1,Lrg_Zoo,Large zooplankton,1,1,1,1,1,1,1,1,0,0,0,0,0,1,0,LG_ZOO,1,0,0,0,0,0,0,0,1,0,0,0
+ZG,9,1,Gel_Zoo,Gelatinous zooplankton,1,1,1,1,1,1,1,1,0,0,0,0,0,1,0,LG_ZOO,1,0,0,0,0,0,0,0,1,0,0,0
+AUR,10,1,Aurelia,Moon jelly,1,1,1,1,1,1,1,1,0,0,0,0,0,1,0,LG_ZOO,1,0,0,0,0,0,0,0,1,0,0,0
+SQX,11,1,Squid,Squid,1,1,1,1,1,1,1,1,0,0,0,0,1,1,0,LG_ZOO,1,0,0,0,0,0,0,0,1,0,0,0
+BMD,12,1,Macrobenth_Deep,Deep macro-zoobenthos,1,1,1,1,1,1,0,1,0,0,0,0,0,1,0,MOB_EP_OTHER,1,0,0,0,0,0,0,0,1,0,0,0
+BD,13,1,Deposit_Feeder,Deposit feeders,1,1,1,1,1,1,0,1,0,0,0,0,1,1,0,SED_EP_FF,1,0,0,0,0,0,0,0,1,0,0,0
+BG,14,1,Benthic_grazer,Benthic grazers,1,1,1,1,1,1,0,1,0,0,0,0,1,1,0,MOB_EP_OTHER,1,0,0,0,0,0,0,0,1,0,0,0
+BMS,15,1,Octopi,Octopi,1,1,1,1,1,1,0,1,0,0,0,0,1,1,0,MOB_EP_OTHER,1,0,0,0,0,0,0,0,1,0,0,0
+DUN,16,1,Dungeness,Dungeness crab,1,1,1,1,1,1,0,1,0,0,0,0,1,1,0,MOB_EP_OTHER,1,0,0,0,0,0,0,0,1,0,0,0
+BML,17,1,Crab,Crabs,1,1,1,1,1,1,0,1,0,0,0,0,1,1,0,MOB_EP_OTHER,1,0,0,0,0,0,0,0,1,0,0,0
+PWN,18,1,Shrimp,Shrimp,1,1,1,1,1,1,1,1,0,0,0,0,1,1,0,PWN,1,0,0,0,0,0,0,0,1,0,0,0
+BFF,19,1,Filter_Other,Benthic filter feeder,1,1,1,1,1,1,0,0,0,0,0,0,1,1,0,SED_EP_FF,1,1,0,0,0,0,0,0,1,0,0,0
+BIV,20,1,Bivalve,Bivalves,1,1,1,1,1,1,0,0,0,0,0,0,1,1,0,SED_EP_FF,1,0,0,0,0,0,0,0,1,0,0,0
+GEC,21,1,Geoduck,Geoducks,1,1,1,1,1,1,0,0,0,0,0,0,1,1,0,SED_EP_FF,1,0,0,0,0,0,0,0,1,0,0,0
+BC,22,1,Carn_Infauna,Carnivorous infauna,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,MOB_EP_OTHER,1,0,0,0,0,0,0,0,1,0,0,0
+HEP,23,1,Herring_PS,Pacific Herring Puget Sound,7,1,2,1,1,1,1,1,1,0,0,0,1,1,0,FISH,1,0,0,0,0,0,0,0,3,0,0,0
+HEC,24,1,Herring_Cherry,Pacific Herring Cherry Point,6,1,2,1,1,1,1,1,1,0,0,0,1,1,0,FISH,1,0,0,0,0,0,0,0,3,0,0,0
+FPS,25,1,Sm_Plank_Fish,Small Planktivorous Fish,8,1,2,1,1,1,1,1,0,0,0,0,1,1,0,FISH,1,0,0,0,0,0,0,0,1,0,0,0
+POP,26,1,Perch_Fish,Perch,8,1,2,1,1,1,1,1,0,0,0,0,1,1,0,FISH,1,0,0,0,0,0,0,0,1,0,0,0
+CHY,27,1,ChinookY_Fish,Chinook Hatch Yearling,5,1,2,1,1,1,1,1,1,1,1,4,1,1,0,FISH,1,0,0,0,0,0,0,0,12,0,2,1
+CHS,28,1,ChinookSY_Fish,Chinook Hatch Subyearling,5,1,2,1,1,1,1,1,1,1,1,4,1,1,0,FISH,1,0,0,0,0,0,0,0,12,0,2,1
+CSY,29,1,ChinookSKY_Fish,Chinook Skagit Yearling,5,1,2,1,1,1,1,1,1,1,1,4,1,1,0,FISH,1,0,0,0,0,0,0,0,12,0,2,1
+CSS,30,1,ChinookSKSY_Fish,Chinook Skagit Subyearling,5,1,2,1,1,1,1,1,1,1,1,4,1,1,0,FISH,1,0,0,0,0,0,0,0,12,0,2,1
+CSN,31,1,ChinookSSY_Fish,Chinook Snohomish Subyearling,5,1,2,1,1,1,1,1,1,1,1,4,1,1,0,FISH,1,0,0,0,0,0,0,0,12,0,2,1
+CDS,32,1,ChinookDSY_Fish,Chinook Duwamish Subyearling,5,1,2,1,1,1,1,1,1,1,1,4,1,1,0,FISH,1,0,0,0,0,0,0,0,12,0,2,1
+CNY,33,1,ChinookNY_Fish,Chinook Nisqually Yearling,5,1,2,1,1,1,1,1,1,1,1,4,1,1,0,FISH,1,0,0,0,0,0,0,0,12,0,2,1
+CNS,34,1,ChinookNSY_Fish,Chinook Nisqually Subyearling,5,1,2,1,1,1,1,1,1,1,1,4,1,1,0,FISH,1,0,0,0,0,0,0,0,12,0,2,1
+CHC,35,1,ChinookHY_Fish,Chinook Hood Canal Subyearling,5,1,2,1,1,1,1,1,1,1,1,4,1,1,0,FISH,1,0,0,0,0,0,0,0,12,0,2,1
+CYE,36,1,ChinookOY_Fish,Chinook other Yearling,5,1,2,1,1,1,1,1,1,1,1,4,1,1,0,FISH,1,0,0,0,0,0,0,0,12,0,2,1
+CKS,37,1,ChinookOSY_Fish,Chinook other Subyearling,5,1,2,1,1,1,1,1,1,1,1,4,1,1,0,FISH,1,0,0,0,0,0,0,0,12,0,2,1
+CRH,38,1,ChinookResH_Fish,Chinook resident Hood canal,5,1,2,1,1,1,1,1,0,0,0,0,1,1,0,FISH,1,0,0,0,0,0,0,0,1,0,2,0
+CRW,39,1,ChinookResN_Fish,Chinook resident North Puget Sound,5,1,2,1,1,1,1,1,0,0,0,0,1,1,0,FISH,1,0,0,0,0,0,0,0,1,0,2,0
+CRC,40,1,ChinookResW_Fish,Chinook resident central south Puget Sound,5,1,2,1,1,1,1,1,0,0,0,0,1,1,0,FISH,1,0,0,0,0,0,0,0,1,0,2,0
+COH,41,1,CohoHY_Fish,Coho Hatch Yearling,3,1,2,1,1,1,1,1,1,1,1,4,1,1,0,FISH,1,0,0,0,0,0,0,0,12,0,2,1
+COS,42,1,CohoSY_Fish,Coho Skagit Yearling,3,1,2,1,1,1,1,1,1,1,1,4,1,1,0,FISH,1,0,0,0,0,0,0,0,12,0,2,1
+COD,43,1,CohoDSY_Fish,Coho Deep South Yearling,3,1,2,1,1,1,1,1,1,1,1,4,1,1,0,FISH,1,0,0,0,0,0,0,0,12,0,2,1
+COY,44,1,CohoOY_Fish,Coho other Yearling,3,1,2,1,1,1,1,1,1,1,1,4,1,1,0,FISH,1,0,0,0,0,0,0,0,12,0,2,1
+COR,45,1,CohoRes_Fish,Coho resident Puget Sound wide,3,1,2,1,1,1,1,1,0,0,0,0,1,1,0,FISH,1,0,0,0,0,0,0,0,1,0,2,0
+CDR,47,1,CohoResD_Fish,Coho resident Deep South Yearling,3,1,2,1,1,1,1,1,0,0,0,0,1,1,0,FISH,1,0,0,0,0,0,0,0,1,0,2,0
+CMS,46,1,ChumHSY_Fish,Chum Hatch Subyearling,5,1,2,1,1,1,1,1,1,1,1,4,1,1,0,FISH,1,0,0,0,0,0,0,0,12,0,2,1
+CMF,48,1,ChumFSY_Fish,Chum Fall Subyearling,5,1,2,1,1,1,1,1,1,1,1,4,1,1,0,FISH,1,0,0,0,0,0,0,0,12,0,2,1
+CMH,49,1,ChumHCSY_Fish,Chum Hood Canal summer run Subyearling,5,1,2,1,1,1,1,1,1,1,1,4,1,1,0,FISH,1,0,0,0,0,0,0,0,12,0,2,1
+PIS,50,1,PinkSY_Fish,Pink Salmon Subyearling,3,1,2,1,1,1,1,1,1,1,1,4,1,1,0,FISH,1,0,0,0,0,0,0,0,12,0,2,1
+SAL,51,1,OtherSal_Fish,Other salmonids,8,1,2,1,1,1,1,1,1,1,1,4,1,1,0,FISH,1,0,0,0,0,0,0,0,12,0,2,1
+SAF,52,1,SGeorgia_Fish,Strait of Georgia salmonids,5,1,2,1,1,1,1,1,1,1,1,4,1,1,0,FISH,1,0,0,0,0,0,0,0,12,0,2,1
+FMM,53,1,Gadiods_Fish,Hake_Large gadoids,10,1,2,1,2,1,1,1,0,0,0,0,1,1,0,FISH,1,0,0,0,0,0,0,0,1,0,0,0
+FVS,54,1,LgDem_Fish,Large demersal predators,10,1,2,1,2,1,1,1,0,0,0,0,1,1,0,FISH,1,0,0,0,0,0,0,0,1,0,0,0
+ROC,55,1,DemRock_Fish,Demersal rockfish,10,1,2,1,4,1,1,1,0,0,0,0,1,1,0,FISH,1,0,0,0,0,0,0,1,1,0,0,0
+MRO,56,1,MidRock_Fish,Midwater rockfish,10,1,2,1,3,1,1,1,0,0,0,0,1,1,0,FISH,1,0,0,0,0,0,0,1,1,0,0,0
+DVR,57,1,DemVRock_Fish,Demersal vulnerable rockfish,10,1,2,1,7,1,1,1,0,0,0,0,1,1,0,FISH,1,0,0,0,0,0,0,1,1,0,0,0
+MVR,58,1,MidVRock_Fish,Midwater vulnerable rockfish,10,1,2,1,4,1,1,1,0,0,0,0,1,1,0,FISH,1,0,0,0,0,0,0,1,1,0,0,0
+SMD,59,1,SmDem_Fish,Small demersal fish,5,1,2,1,1,1,1,1,0,0,0,0,1,1,0,FISH,1,0,0,0,0,0,0,0,1,0,0,0
+FDF,60,1,SmFlat_Fish,Small-mouthed Flatfish,10,1,2,1,2,1,1,1,0,0,0,0,1,1,0,FISH,1,0,0,0,0,0,0,1,1,0,0,0
+HAP,61,1,PiscFlat_Fish,Piscivorous flatfish,10,1,2,1,2,1,1,1,0,0,0,0,1,1,0,FISH,1,0,0,0,0,0,0,1,1,0,0,0
+DOG,62,1,Spinydog_Fish,Spiny dogfish,10,1,2,1,7,1,1,1,1,0,0,0,1,1,0,SHARK,1,0,0,0,0,0,0,0,2,0,0,0
+SBL,63,1,Sixgill_Shark,Sixgill Shark,10,1,2,1,8,1,1,1,0,0,0,0,1,1,0,SHARK,1,0,0,0,0,0,0,1,2,0,0,0
+SSK,64,1,SkateRay,Skates,10,1,2,1,3,1,1,1,0,0,0,0,1,1,0,SHARK,1,0,0,0,0,0,0,1,1,0,0,0
+RAT,65,1,Ratfish,Ratfish,10,1,2,1,1,1,1,1,0,0,0,0,1,1,0,FISH,1,0,0,0,0,0,0,1,1,0,0,0
+SB,66,1,Pisc_Seabird,Seabirds (piscivorous),10,1,2,1,2,1,1,1,0,0,0,0,0,1,0,BIRD,1,0,0,0,1,0,0,0,1,0,0,0
+SP,67,1,NonPisc_Seabird,Seabirds (mainly non-piscivorous),10,1,2,1,2,1,1,1,0,0,0,0,0,1,0,BIRD,1,0,0,0,0,0,0,0,1,0,0,0
+BE,68,1,Raptors,Raptors,10,1,2,1,3,1,1,1,2,0,0,0,0,1,0,BIRD,1,0,0,0,1,0,0,0,1,0,0,0
+HSL,69,1,Harbor_seal,Harbor seals,10,1,2,1,2,1,1,1,0,0,0,0,0,1,0,MAMMAL,1,0,0,0,1,0,0,0,1,0,0,0
+CSL,70,1,California_sea_lion,California sea lions,10,1,2,1,1,1,1,1,1,0,1,1,0,1,0,MAMMAL,1,0,0,0,1,0,0,0,1,0,0,0
+PIN,71,1,Pinniped,Steller sea lions,10,1,2,1,3,1,1,1,1,0,0,0,0,1,0,MAMMAL,1,0,0,0,1,0,0,0,4,0,0,0
+PHR,72,1,Porpoise,Harbor porpoise,10,1,2,1,2,1,1,1,0,0,0,0,0,1,0,MAMMAL,1,0,0,0,1,0,0,0,1,0,0,0
+ROR,73,1,Res_Orca,Resident Orca,10,1,2,1,9,1,1,1,1,0,0,0,0,1,0,MAMMAL,1,0,0,0,1,0,0,0,4,0,0,0
+TOR,74,1,Trans_Orca,Transient Orca,10,1,2,1,9,1,1,1,2,0,1,1,0,1,0,MAMMAL,1,0,0,0,1,0,0,0,4,0,0,0
+HUW,75,1,Hump_whale,Humpback whales,10,1,2,1,8,1,1,1,1,0,1,1,0,1,0,MAMMAL,1,0,0,0,0,0,0,0,4,0,0,0
+DL,76,1,Lab_Det,Labile detritus,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,LAB_DET,0,0,0,0,0,0,0,0,1,0,0,0
+DR,77,1,Ref_Det,Refractory detritus,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,REF_DET,0,0,0,0,0,0,0,0,1,0,0,0
+DC,78,1,Carrion,Carrion,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,CARRION,0,0,0,0,0,0,0,0,1,0,0,0

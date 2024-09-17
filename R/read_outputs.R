@@ -15,7 +15,8 @@ library("stringr") # TODO: verifier que c'est bien en entrée du package puis so
 #'
 #' @examples
 #'
-read_atlantis = function(path, prefix = NULL, fg.file, fishery = F, spatial = F, N_only = F,  ...) {
+read_atlantis = function(path, prefix = NULL, fg.file, fishery = F, spatial = F, N_only = F,
+                         txt.filename = "AMPS_OUTBiomIndx.txt", ...) {
   if(!dir.exists(path)) stop("The output directory does not exist.")
 
   print("Reading Atlantis outputs")
@@ -26,10 +27,18 @@ read_atlantis = function(path, prefix = NULL, fg.file, fishery = F, spatial = F,
     class(output$Nbiomass) = "atlantis.Nbiomass"
     class(output) = "atlantis"
   }else{
-    output = list(biomass= extract_biomass_main(path = path, prefix = prefix, fg.file = fg.file),
-                  landings=extract_catch_main(path, prefix = prefix, fg.file, fishery = F),
-                  abundance= extract_abund_main(path, prefix = prefix, fg.file),
-                  waa = extract_waa(path=path, prefix = prefix))
+    if (is.stopped(path, txt.filename)){ #TODO: improve this to have it not hardcoded
+      output = list(biomass= rep(0,2),
+                    landings=rep(0,2),
+                    abundance= rep(0,2),
+                    waa = rep(0,2))
+    }else{
+      output = list(biomass= extract_biomass_main(path = path, prefix = prefix, fg.file = fg.file),
+                    landings=extract_catch_main(path, prefix = prefix, fg.file, fishery = F),
+                    abundance= extract_abund_main(path, prefix = prefix, fg.file),
+                    waa = extract_waa(path=path, prefix = prefix))
+    }
+
     class(output$biomass) = "atlantis.biomass"
     class(output$landings) = "atlantis.landings"
     class(output$abundance) = "atlantis.abundance"
@@ -107,5 +116,4 @@ process_fg <- function(fg.file){
 
   return(rbind(fg1,fg2,fg3,fg4))
 }
-
 
