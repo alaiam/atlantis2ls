@@ -28,7 +28,7 @@ read_atlantis = function(path, prefix = NULL, fg.file, fishery = F, spatial = F,
     class(output$Nbiomass) = "atlantis.Nbiomass"
     class(output) = "atlantis"
   }else{
-    if (is.stopped(path, txt.filename)){ #TODO: improve this to have it not hardcoded
+    if (is.stopped(path, txt.filename, run.filename)){ #TODO: improve this to have it not hardcoded
       output = list(biomass= rep(0,2),
                     landings=rep(0,2),
                     abundance= rep(0,2),
