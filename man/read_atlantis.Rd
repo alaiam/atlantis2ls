@@ -11,6 +11,7 @@ read_atlantis(
   fishery = F,
   spatial = F,
   N_only = F,
+  txt.filename = "AMPS_OUTBiomIndx.txt",
   ...
 )
 }
