@@ -50,7 +50,7 @@ return_real_tstop <- function(path, txt.filename) {
 #' @examples
 is.stopped <- function(path, txt.filename) {
 
-  return(return_real_tstop(path, txt.filename) >=3650) #TODO: Not hard coded
+  return(return_real_tstop(path, txt.filename) <3650) #TODO: Not hard coded
 }
 
 
