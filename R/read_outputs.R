@@ -16,7 +16,7 @@ library("stringr") # TODO: verifier que c'est bien en entrée du package puis so
 #' @examples
 #'
 read_atlantis = function(path, prefix = NULL, fg.file, fishery = F, spatial = F, N_only = F,
-                         txt.filename = "outFolder/AMPS_OUTBiomIndx.txt",
+                         txt.filename = "outputFolder/AMPS_OUTBiomIndx.txt",
                          run.filename = "PugetSound_run.prm",...) { #TODO: generalize
   if(!dir.exists(path)) stop("The output directory does not exist.")
 
