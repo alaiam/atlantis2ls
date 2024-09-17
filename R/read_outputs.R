@@ -16,7 +16,8 @@ library("stringr") # TODO: verifier que c'est bien en entrée du package puis so
 #' @examples
 #'
 read_atlantis = function(path, prefix = NULL, fg.file, fishery = F, spatial = F, N_only = F,
-                         txt.filename = "AMPS_OUTBiomIndx.txt", ...) {
+                         txt.filename = "outFolder/AMPS_OUTBiomIndx.txt",
+                         run.filename = "PugetSound_run.prm",...) { #TODO: generalize
   if(!dir.exists(path)) stop("The output directory does not exist.")
 
   print("Reading Atlantis outputs")
@@ -33,6 +34,7 @@ read_atlantis = function(path, prefix = NULL, fg.file, fishery = F, spatial = F,
                     abundance= rep(0,2),
                     waa = rep(0,2))
     }else{
+      output.path = paste0(path, "/outFolder")
       output = list(biomass= extract_biomass_main(path = path, prefix = prefix, fg.file = fg.file),
                     landings=extract_catch_main(path, prefix = prefix, fg.file, fishery = F),
                     abundance= extract_abund_main(path, prefix = prefix, fg.file),
