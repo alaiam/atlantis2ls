@@ -58,7 +58,7 @@ calculate_biomass <- function(biomass_array, fg.file, name, outputs.nc) {
   # btype <- fg.file$BiomassType[fg.file$Name == sub("_N", "", name)]
   # areas_vec <- areas$area
   areas_vec <- volumes_arr[7,]/20 #TODO: true calculation
-  log_file <- paste0(name,"_dim.txt")
+  log_file <- paste0("debug_dim.txt")
   write(paste(dim(biomass_array)),
         file = log_file, append = TRUE)
 

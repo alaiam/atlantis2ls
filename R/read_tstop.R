@@ -33,7 +33,7 @@ return_real_tstop <- function(path, txt.filename) {
   prm <- paste0(path, "/", txt.filename)
   bio.lines <- read.table(prm)
   last.raw <- length(bio.lines$V1)
-  value <- as.numeric(bio.lines$V1[last.raw])
+  value <- as.numeric(bio.lines$V1[52])
   return(value)
 }
 
@@ -50,7 +50,7 @@ return_real_tstop <- function(path, txt.filename) {
 #' @examples
 is.stopped <- function(path, txt.filename, run.filename) {
 
-  return(return_real_tstop(path, txt.filename) < (return_run_tstop(path, run.filename)-1)) #TODO: Not hard coded the limit around tstop
+  return(return_real_tstop(path, txt.filename) < return_run_tstop(path, run.filename)) #TODO: Not hard coded
 }
 
 
