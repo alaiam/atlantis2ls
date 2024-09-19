@@ -28,11 +28,6 @@ extract_biomass_main <- function(path, prefix = NULL, fg.file){
   Ndat <- purrr::map(1:length(vn), function(x) ncdf4::ncvar_get(outputs.nc,vn[x]))
   names(Ndat)<- vn
 
-  log_file <- "parallel_log_names_var.txt"
-  write(paste("Running on core:", vn, "\n"),
-        file = log_file, append = TRUE)
-
-  btype <- fg$BiomassType
   biomass <- lapply(X = Ndat, FUN = calculate_biomass, fg.file = fg, name = names(Ndat), outputs.nc = outputs.nc)
 
   names(biomass) <- fg$Name
@@ -57,10 +52,7 @@ calculate_biomass <- function(biomass_array, fg.file, name, outputs.nc) {
 
   # btype <- fg.file$BiomassType[fg.file$Name == sub("_N", "", name)]
   # areas_vec <- areas$area
-  areas_vec <- volumes_arr[7,]/20 #TODO: true calculation
-  log_file <- paste0("debug_dim.txt")
-  write(paste(dim(biomass_array)),
-        file = log_file, append = TRUE)
+  areas_vec <- volumes_arr[7,]/5 #TODO: true calculation
 
   if(length(dim(biomass_array))==3) {
     totbio <- apply(biomass_array * c(volumes_arr) * (5.7 * 20 / 10^9), 3, sum, na.rm = TRUE)
