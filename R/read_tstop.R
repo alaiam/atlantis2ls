@@ -33,7 +33,7 @@ return_real_tstop <- function(path, txt.filename) {
   prm <- paste0(path, "/", txt.filename)
   bio.lines <- read.table(prm)
   last.raw <- length(bio.lines$V1)
-  value <- as.numeric(bio.lines$V1[52])
+  value <- as.numeric(bio.lines$V1[last.raw])
   return(value)
 }
 
