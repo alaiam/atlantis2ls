@@ -2,12 +2,12 @@
 
 # path = "C:/Users/Alaia/Desktop/Postdoc/R script/atlantis2ls/data"
 # prefix = "AMPS"
-# fg.file = "C:/Users/Alaia/Desktop/Postdoc/R script/atlantis2ls/data/PugetSoundAtlantisFunctionalGroups_salmon_rectype4.csv"
+# fg.file = "C:/Users/Alaia/Desktop/Postdoc/R script/atlantis2ls/data/PugetSoundAtlantisFunctionalGroups_2024.csv"
 # bio.prm = "C:/Users/Alaia/Desktop/Postdoc/R script/atlantis2ls/data/AMPSbioparam_mv1_2024_V4.prm"
 # bio.prm2 = "C:/Users/Alaia/Desktop/Postdoc/R script/atlantis2ls/data/AMPSbioparam_mv1_20222.prm"
 # bio.lines <- readLines(bio.prm)
 # a <- read_atlantis(path = path, prefix = prefix, fg.file = fg.file, N_only = T)
-
+# outputs.nc <- ncdf4::nc_open("C:/Users/Alaia/Desktop/Postdoc/R script/atlantis2ls/data/AMPS_OUT.nc")
 
 
 # for (i in 1:10){
