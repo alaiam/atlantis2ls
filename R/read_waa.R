@@ -22,7 +22,7 @@ extract_waa <- function(path, prefix = NULL){
 
   wgt = lapply(purrr::map2(purrr::map2(data_Str,relnums,`*`), purrr::map2(data_Res,relnums,`*`), `+`),"*",20*5.7/1e6)%>%
     purrr::map(apply,MARGIN=3,FUN=sum)
-
+  names(wgt)  <- sub( "_StructN", "", names(wgt))
 
   return(wgt)
 }

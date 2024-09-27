@@ -52,7 +52,3 @@ is.stopped <- function(path, txt.filename, run.filename) {
 
   return(return_real_tstop(path, txt.filename) < (return_run_tstop(path, run.filename)-1)) #TODO: Not hard coded the limit around tstop
 }
-
-
-
-
