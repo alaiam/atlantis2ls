@@ -4,7 +4,7 @@
 \alias{is.stopped}
 \title{Title}
 \usage{
-is.stopped(path, txt.filename)
+is.stopped(path, txt.filename, run.filename)
 }
 \arguments{
 \item{run.filename}{}

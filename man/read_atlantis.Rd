@@ -11,7 +11,8 @@ read_atlantis(
   fishery = F,
   spatial = F,
   N_only = F,
-  txt.filename = "AMPS_OUTBiomIndx.txt",
+  txt.filename = "outputFolder/AMPS_OUTBiomIndx.txt",
+  run.filename = "PugetSound_run.prm",
   ...
 )
 }
