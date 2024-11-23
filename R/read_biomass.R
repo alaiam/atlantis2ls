@@ -52,7 +52,7 @@ calculate_biomass <- function(biomass_array, fg.file, name, outputs.nc) {
 
   # btype <- fg.file$BiomassType[fg.file$Name == sub("_N", "", name)]
   # areas_vec <- areas$area
-  areas_vec <- volumes_arr[7,]/5 #TODO: true calculation
+  areas_vec <- volumes_arr[7,] #layer 7 = 1m deep; so volume = area
 
   if(length(dim(biomass_array))==3) {
     totbio <- apply(biomass_array * c(volumes_arr) * (5.7 * 20 / 10^9), 3, sum, na.rm = TRUE)
