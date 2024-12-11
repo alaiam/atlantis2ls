@@ -1,7 +1,7 @@
 # Function to read waa outputs
 
 
-extract_waa <- function(path, prefix = NULL){
+extract_waa <- function(path, prefix = NULL){ #TODO: delete automatically the boundary boxes
   outputs.nc <-open_main_nc(path, prefix = prefix)
   vn <- names(outputs.nc$var)[grep("_ResN",outputs.nc$var)]
   data_Res <- purrr::map(1:length(vn), function(x) ncdf4::ncvar_get(outputs.nc,vn[x]))

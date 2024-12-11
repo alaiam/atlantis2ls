@@ -1,6 +1,3 @@
-library("stringr") # TODO: verifier que c'est bien en entrée du package puis sortir cette ligne
-# Main read_atlantis function and general tools
-
 
 ##########
 ## MAIN ##
