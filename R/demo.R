@@ -24,5 +24,11 @@
 # a <- edit_param_sp(bio.prm, param = "bhbeta", factor = 2, species = "HEP")
 # ratio
 # package fusem --> helpful to create a package
-
-
+#
+# harvest.prm = "data/AMPS_atharvest_2024_calib.prm"
+# harvest.lines = readLines(harvest.prm)
+# factor = 2
+# species = "CHY"
+# harvest.lines <- edit_param_mfc(harvest.lines, factor, species)
+#
+# writeLines(harvest.lines, "data/harvest.prm")

@@ -87,6 +87,29 @@ open_main_nc <- function(path, prefix = NULL) {
   return(outputs.nc)
 }
 
+#' open_catch_nc
+#' Open the "XXX_OUT.nc" file
+#' @param path
+#' @param prefix
+#'
+#' @return
+#' @export
+#'
+#' @examples
+open_catch_nc <- function(path, prefix = NULL) {
+  if(is.null(prefix)) stop("Add prefix argument for your Atlantis configuration")
+  if(str_sub(path,-1)=="/"){
+    outputs.nc <- ncdf4::nc_open(paste(path, "/", prefix, "_OUTCATCH.nc", sep = ""))
+  }else{
+    outputs.nc <- ncdf4::nc_open(paste(path, "/", prefix, "_OUTCATCH.nc", sep = ""))
+  }
+  return(outputs.nc)
+}
+
+
+
+
+
 #' open_fg_file
 #'
 #' @param path
