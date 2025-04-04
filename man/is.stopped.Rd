@@ -2,7 +2,7 @@
 % Please edit documentation in R/read_tstop.R
 \name{is.stopped}
 \alias{is.stopped}
-\title{Title}
+\title{is.stopped}
 \usage{
 is.stopped(path, txt.filename, run.filename)
 }
@@ -10,5 +10,5 @@ is.stopped(path, txt.filename, run.filename)
 \item{run.filename}{}
 }
 \description{
-Title
+is.stopped
 }
