@@ -1,13 +1,13 @@
 Package: atlantis2ls
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Calibrar-Atlantis connector
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Author: Alaia Morell
+Maintainer: The package maintainer <alaia.morell@gmail.com>
+Description: The atlantis2ls package first purpose is to gather the tools needed to connect the Marine Ecosystem Model Atlantis and the calibration package Calibrar.
+				Many tools can be useful outside of this purpose. However, keep in mind that several choices were made for the main purpose. 
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
-Imports: stringr, ncdf4
-RoxygenNote: 7.2.3
+Imports: stringr, ncdf4, dplyr 
+RoxygenNote: 7.3.2

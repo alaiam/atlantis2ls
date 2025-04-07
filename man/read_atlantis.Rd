@@ -13,11 +13,30 @@ read_atlantis(
   N_only = F,
   txt.filename = "outputFolder/AMPS_OUTBiomIndx.txt",
   run.filename = "PugetSound_run.prm",
+  dt.timeserie = 2,
   ...
 )
 }
 \arguments{
 \item{path}{: the path of the atlantis folder}
+
+\item{prefix}{Prefix of the configuration files (ex: for Puget Sound, it is AMPS)}
+
+\item{fg.file}{".csv" file with the functional groups information}
+
+\item{fishery}{Is fishery activated? Default is FALSE}
+
+\item{spatial}{Load the data per polygon. Default is FALSE. Option TRUE is non-available}
+
+\item{N_only}{Load the row biomass data in Nitrogen}
+
+\item{txt.filename}{Localisation of the biomass files ("outputFolder/XXXX_OUTBiomIndx.txt"). Default is for Puget Sound ecosystem}
+
+\item{run.filename}{Localisation of the run.prm files ("PugetSound_run.prm"). Default is for Puget Sound ecosystem}
+
+\item{dt.timeserie}{Number of timestep written in the NC files. Default is 2. Option needed to create data when the model is broken during calibration process. The artificial data created are equal to 0 for all species and all indicators.}
+
+\item{...}{}
 }
 \value{
 : An object of class Atlantis

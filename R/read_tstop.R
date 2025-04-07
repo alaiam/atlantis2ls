@@ -38,7 +38,7 @@ return_real_tstop <- function(path, txt.filename) {
 }
 
 
-#' Title
+#' is.stopped
 #'
 #' @param path
 #' @param txt.filename

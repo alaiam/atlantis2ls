@@ -4,10 +4,10 @@
 \alias{extract_catch_main}
 \title{extract_catch_main}
 \usage{
-extract_catch_main(path, prefix = NULL, fg.file, fishery = F)
+extract_catch_main(path, prefix = NULL, fg.file, fishery = F, dt.timeserie)
 }
 \arguments{
-\item{fishery}{}
+\item{dt.timeserie}{}
 }
 \description{
 extract_catch_main
