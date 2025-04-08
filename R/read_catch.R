@@ -12,7 +12,7 @@
 #' @export
 #'
 #' @examples
-extract_catch_main <- function(path, prefix = NULL, fg.file, dt.timeserie, ...){
+extract_catch_main <- function(path, prefix = NULL, fg.file, dt.timeserie, fishery, ...){
   fg <- process_fg(fg.file)
 
   if (fishery == F){
