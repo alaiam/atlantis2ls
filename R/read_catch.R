@@ -12,14 +12,16 @@
 #' @export
 #'
 #' @examples
-extract_catch_main <- function(path, prefix = NULL, fg.file, fishery = F, dt.timeserie){
+extract_catch_main <- function(path, prefix = NULL, fg.file, dt.timeserie, ...){
   fg <- process_fg(fg.file)
 
   if (fishery == F){
     fg <- process_fg(fg.file)
     catch <- rep(list(rep(0,dt.timeserie)),length(fg$Name))
     names(catch) <- fg$Name
+    print("Creating 0 for catches as Fishery is not activating")
   }else{
+    print("Reading catch outputs")
     outputs.nc <-open_catch_nc(path, prefix = prefix)
 
     fg <- process_fg(fg.file)
@@ -29,8 +31,6 @@ extract_catch_main <- function(path, prefix = NULL, fg.file, fishery = F, dt.tim
     vn <-  vn[grep("_FC", vn)]
     ts <- ncdf4::ncvar_get(outputs.nc,varid = "t") %>% as.numeric
     tyrs <- ts/(60*60*24*365) # from s to yrs
-
-
 
 
     Ndat <- purrr::map(1:length(vn), function(x) ncdf4::ncvar_get(outputs.nc,vn[x]))
