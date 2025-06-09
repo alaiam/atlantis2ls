@@ -12,7 +12,8 @@
 #' @export
 #'
 #' @examples
-extract_biomass_main <- function(path, prefix = NULL, fg.file){
+extract_biomass_main <- function(path, prefix = NULL, fg.file, txt = F, ts = NA){
+  if (txt == F){
   outputs.nc <-open_main_nc(path, prefix = prefix)
 
   fg <- process_fg(fg.file)
@@ -22,15 +23,27 @@ extract_biomass_main <- function(path, prefix = NULL, fg.file){
   ts <- ncdf4::ncvar_get(outputs.nc,varid = "t") %>% as.numeric
   tyrs <- ts/(60*60*24*365) # from s to yrs
 
-
-
-
   Ndat <- purrr::map(1:length(vn), function(x) ncdf4::ncvar_get(outputs.nc,vn[x]))
   names(Ndat)<- vn
 
   biomass <- lapply(X = Ndat, FUN = calculate_biomass, fg.file = fg, name = names(Ndat), outputs.nc = outputs.nc)
 
   names(biomass) <- fg$Name
+  }
+  if (txt==T){
+    fg <- process_fg(fg.file)
+    num <- length(fg$Code)
+
+    outputs.txt <- read.table(paste0(path, "/",prefix, "_OUTBiomIndx.txt"), header = T)[,2:(num+1)]
+    code_indices <- match(names(outputs.txt), fg$Code)
+    names(outputs.txt) <- fg$Name[code_indices]
+
+    if(!is.na(ts)){
+      length.ts <- dim(outputs.txt)[1]
+      outputs.txt <- outputs.txt[(length.ts-ts+1):length.ts,]}
+    biomass <- lapply(X = outputs.txt, FUN = as.numeric)
+
+  }
 
   return(biomass)
 }
@@ -76,3 +89,5 @@ calculate_biomass <- function(biomass_array, fg.file, name, outputs.nc) {
   # }
   return(totbio)
 }
+
+
