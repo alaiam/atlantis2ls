@@ -12,7 +12,7 @@
 #' @export
 #'
 #' @examples
-extract_biomass_main <- function(path, prefix = NULL, fg.file, txt = F, ts = NA){
+extract_biomass_main <- function(path, prefix = NULL, fg.file, txt = F, dt.timeserie = NA){
   if (txt == F){
   outputs.nc <-open_main_nc(path, prefix = prefix)
 
@@ -38,9 +38,9 @@ extract_biomass_main <- function(path, prefix = NULL, fg.file, txt = F, ts = NA)
     code_indices <- match(names(outputs.txt), fg$Code)
     names(outputs.txt) <- fg$Name[code_indices]
 
-    if(!is.na(ts)){
+    if(!is.na(dt.timeserie)){
       length.ts <- dim(outputs.txt)[1]
-      outputs.txt <- outputs.txt[(length.ts-ts+1):length.ts,]}
+      outputs.txt <- outputs.txt[(length.ts-dt.timeserie+1):length.ts,]}
     biomass <- lapply(X = outputs.txt, FUN = as.numeric)
 
   }
